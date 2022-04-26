@@ -12,7 +12,11 @@ const Navbar = () => {
         <IoMdSettings className="setting" />
       </header>
       <div id="headline">
-        <h1 className="topic">Covid Statistics around the world</h1>
+        <h1 className="topic">
+          <text style={{ whiteSpace: 'pre-line' }}>
+            {'Covid Statistics<br/> around the world.'.split('<br/>').join('\n')}
+          </text>
+        </h1>
         <div />
       </div>
     </>
