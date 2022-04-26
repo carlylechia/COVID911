@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: brown;
+  color: #fff;
+}
+
+.setting {
+  font-size: 2rem;
+}
+
+#headline {
+  padding: 5rem;
+  background: url('../../Images/world-map.png') no-repeat 30% 50% rgb(153, 79, 79);
+  background-size: 35% 70%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topic {
+  color: #fff;
+  width: 17rem;
+  margin-right: 15rem;
+}
