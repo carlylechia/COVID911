@@ -39,7 +39,7 @@ export const getCountries = async () => {
       image,
     };
   });
-  mappedCountries.sort((a, b) => b.regions.length - a.regions.length);
+  mappedCountries.sort((a, b) => b.newCases - a.newCases);
   return mappedCountries;
 };
 export const getRegions = async (countryName) => {
@@ -52,7 +52,7 @@ export const getRegions = async (countryName) => {
   const mappedRegions = regions.map((region) => ({
     id: region.id,
     name: region.name,
-    newCases: region.today_new_confirmed,
+    newCases: region.today_new_confirmed ? region.today_new_confirmed : 0,
   }));
   mappedRegions.sort((a, b) => b.newCases - a.newCases);
   return { countryName: name, newCases, regions: mappedRegions };

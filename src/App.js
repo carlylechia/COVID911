@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Countries from './components/Countries/Countries';
 import { fetchCountries } from './Redux/countries/countries';
-import NationalRegions from './components/NationalRegions/NationalRegions';
+import Regions from './components/Regions/Regions';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Countries />} />
-        <Route path="/:country" element={<NationalRegions />} />
+        <Route path="/:country" element={<Regions />} />
       </Routes>
     </>
   );

@@ -1,8 +1,7 @@
 #countries-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1.5fr));
-  background: linear-gradient(to bottom, rgb(222, 49, 99), #d70040);
-  overflow-x: hidden;
+  padding-bottom: 1.5rem;
 }
 
 .country-card:hover {
@@ -22,4 +21,8 @@
 .country-names {
   font-size: 1.5rem;
   color: #fff;
+}
+
+.loading {
+  margin: 1rem 47%;
 }

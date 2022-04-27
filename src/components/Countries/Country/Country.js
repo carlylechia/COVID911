@@ -17,6 +17,7 @@ const Country = ({
         backgroundSize: '50% 80%',
         opacity: '0.2',
       }}
+      loading="lazy"
     />
     <p className="country-names" style={{ marginLeft: '100%' }}>{name}</p>
     <span className="">

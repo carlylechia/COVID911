@@ -1,0 +1,12 @@
+.states-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.states-container:nth-child(even) {
+  background: rgb(222, 49, 99);
+}
+
+.states-container:nth-child(odd) {
+  background: #d70040;
+}
