@@ -1,5 +1,15 @@
 const images = require.context('../Images', true);
 const countriesAPI = 'https://api.covid19tracking.narrativa.com/api/';
+
+const createDate = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = (`0${date.getMonth() + 1}`).slice(-2);
+  const day = (`0${date.getDate()}`).slice(-2);
+  const currentDate = `${year}-${month}-${day}`;
+
+  return currentDate;
+};
 const getImage = (name) => {
   let countryName = name.replace(/[_]/g, '-').replace('*', '').replace(',', '');
   if (countryName === 'diamond-princess' || countryName === 'ms-zaandam') countryName = 'ship';
@@ -12,14 +22,9 @@ const getImage = (name) => {
     : `https://mapsvg.com/static/maps/geo-calibrated/${countryName}.svg`;
 };
 
-const getCountries = async () => {
-  const date = new Date();
-  const year = date.getFullYear();
-  const month = (`0${date.getMonth() + 1}`).slice(-2);
-  const day = (`0${date.getDate()}`).slice(-2);
-  const currentDate = `${year}-${month}-${day}`;
-  const response = await fetch(`${countriesAPI}/${currentDate}`)
-    .then((res) => res.json()).then((result) => result);
+export const getCountries = async () => {
+  const date = createDate();
+  const response = await fetch(`${countriesAPI}${date}`);
 
   const { countries } = Object.values(response.dates)[0];
   delete countries.Israel;
@@ -34,7 +39,21 @@ const getCountries = async () => {
       image,
     };
   });
+  mappedCountries.sort((a, b) => b.regions.length - a.regions.length);
   return mappedCountries;
 };
+export const getRegions = async (countryName) => {
+  const date = createDate();
+  const response = await fetch(`${countriesAPI}${date}/country/${countryName}`)
+    .then((res) => res.json()).then((result) => result);
 
-export default getCountries;
+  const { countries } = Object.values(response.dates)[0];
+  const { regions, name, today_new_confirmed: newCases } = Object.values(countries)[0];
+  const mappedRegions = regions.map((region) => ({
+    id: region.id,
+    name: region.name,
+    newCases: region.today_new_confirmed,
+  }));
+  mappedRegions.sort((a, b) => b.newCases - a.newCases);
+  return { countryName: name, newCases, regions: mappedRegions };
+};

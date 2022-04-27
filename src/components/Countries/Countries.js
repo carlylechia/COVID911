@@ -13,6 +13,7 @@ const Countries = () => {
             {countryList.map((country) => (
               <Country
                 key={country.id}
+                pageUrl={country.id}
                 image={country.image}
                 name={country.name}
                 total={country.total}

@@ -5,9 +5,9 @@
   overflow-x: hidden;
 }
 
-/* .country-card {
-
-} */
+.country-card:hover {
+  z-index: 1;
+}
 
 #countries-container > .country-card:nth-child(even) {
   background: rgb(222, 49, 99);
@@ -17,4 +17,9 @@
 #countries-container > .country-card:nth-child(odd) {
   background: #d70040;
   outline: 2px solid rgba(238, 50, 81, 0.916);
+}
+
+.country-names {
+  font-size: 1.5rem;
+  color: #fff;
 }
