@@ -13,9 +13,9 @@ const Navbar = () => {
       </header>
       <div id="headline">
         <h1 className="topic">
-          <text style={{ whiteSpace: 'pre-line' }}>
+          <span style={{ whiteSpace: 'pre-line' }}>
             {'Covid Statistics<br/> around the world.'.split('<br/>').join('\n')}
-          </text>
+          </span>
         </h1>
         <div />
       </div>

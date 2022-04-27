@@ -1,21 +1,29 @@
 import PropTypes from 'prop-types';
-import './Country.css';
 
 const Country = ({
   name, image, total, newCases,
 }) => (
-  <div id="country-card">
-    <img id="country-map" style={{ width: '100%', height: 'auto' }} alt={`${name} map`} src={image} loading="lazy" />
-    <p id="country-name">{name}</p>
-    <span id="new-cases">
-      New Cases:
-      {' '}
-      {newCases}
-    </span>
-    <span id="total">
+  <div
+    className="country-card grow pointer flex flex-column justify-end items-end"
+    style={{ minHeight: '25vh' }}
+  >
+    <div
+      style={{
+        width: '100%',
+        height: '70%',
+        background: ` url(${image}) no-repeat 50% 50%`,
+        backgroundSize: '50% 80%',
+        opacity: '0.3',
+      }}
+    />
+    <p className="pr3 white f4 b" style={{ marginLeft: '100%' }}>{name}</p>
+    <span className="db pr3 white f5 b">
       Total:
-      {' '}
-      {total}
+      {` ${total}`}
+    </span>
+    <span className="db pr3 white f5 b">
+      New Cases:
+      {` ${newCases}`}
     </span>
   </div>
 );
@@ -25,4 +33,5 @@ Country.propTypes = {
   total: PropTypes.number.isRequired,
   newCases: PropTypes.number.isRequired,
 };
+
 export default Country;

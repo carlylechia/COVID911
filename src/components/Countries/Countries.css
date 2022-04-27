@@ -1,0 +1,20 @@
+#countries-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1.5fr));
+  background: linear-gradient(to bottom, rgb(222, 49, 99), #d70040);
+  overflow-x: hidden;
+}
+
+/* .country-card {
+
+} */
+
+#countries-container > .country-card:nth-child(even) {
+  background: rgb(222, 49, 99);
+  outline: 2px solid #d70040;
+}
+
+#countries-container > .country-card:nth-child(odd) {
+  background: #d70040;
+  outline: 2px solid rgba(238, 50, 81, 0.916);
+}
