@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import getCountries from '../apiFunctions';
 
 const COUNTRY_LOAD = 'covid911/countries/COUNTRY_LOAD';

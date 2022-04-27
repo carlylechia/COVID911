@@ -7,7 +7,18 @@ const Countries = () => {
     !countryList.length ? <p>Error fetching data.</p>
       : (
         <>
-          {countryList.map((country) => <Country key={country.id} name={country.name} />)}
+          <h2 style={{ background: '#35548b' }}>STATS BY COUNTRY</h2>
+          <main>
+            {countryList.map((country) => (
+              <Country
+                key={country.id}
+                image={country.image}
+                name={country.name}
+                total={country.total}
+                newCases={country.newCases}
+              />
+            ))}
+          </main>
         </>
       )
   );
