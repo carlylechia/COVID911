@@ -1,16 +1,16 @@
-const images = require.context('../Images', true);
+const images = require.context('../Images', false, /\.(png|jpe?g|svg)$/);
 const countriesAPI = 'https://api.covid19tracking.narrativa.com/api/';
 
 const createDate = () => {
   const date = new Date();
   const year = date.getFullYear();
   const month = (`0${date.getMonth() + 1}`).slice(-2);
-  const day = (`0${date.getDate()}`).slice(-2);
+  const day = (`0${date.getDate() - 1}`).slice(-2);
   const currentDate = `${year}-${month}-${day}`;
 
   return currentDate;
 };
-const getImage = (name) => {
+export const getImage = (name) => {
   let countryName = name.replace(/[_]/g, '-').replace('*', '').replace(',', '');
   if (countryName === 'diamond-princess' || countryName === 'ms-zaandam') countryName = 'ship';
   if (countryName === 'south-sudan') countryName = 'sudan';
@@ -24,7 +24,8 @@ const getImage = (name) => {
 
 export const getCountries = async () => {
   const date = createDate();
-  const response = await fetch(`${countriesAPI}${date}`);
+  const response = await fetch(`${countriesAPI}${date}`)
+    .then((res) => res.json()).then((result) => result);
 
   const { countries } = Object.values(response.dates)[0];
   delete countries.Israel;
@@ -57,3 +58,4 @@ export const getRegions = async (countryName) => {
   mappedRegions.sort((a, b) => b.newCases - a.newCases);
   return { countryName: name, newCases, regions: mappedRegions };
 };
+getCountries();

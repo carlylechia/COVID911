@@ -18,19 +18,14 @@ header {
   font-size: 2rem;
 }
 
-#headline {
-  padding: 5rem;
-  background: url('../../Images/world-map.png') no-repeat 30% 50% #d70040;
-  background-size: 35% 70%;
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-  top: 0;
+.navleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.topic {
+.arrow {
   color: #fff;
-  width: 65%;
-  text-align: end;
-  margin-left: 10rem;
+  font-size: 1.5rem;
+  margin-top: 5px;
 }

@@ -11,15 +11,15 @@ const Country = ({
   >
     <div
       style={{
-        width: '100%',
+        width: '10rem',
         height: '70%',
         background: ` url(${image}) no-repeat 50% 50%`,
-        backgroundSize: '50% 80%',
+        backgroundSize: 'auto 80%',
         opacity: '0.2',
       }}
       loading="lazy"
     />
-    <p className="country-names" style={{ marginLeft: '100%' }}>{name}</p>
+    <p className="country-names">{name}</p>
     <span className="">
       Total:
       {` ${total}`}

@@ -3,10 +3,12 @@
   justify-content: space-between;
 }
 
-.states-container:nth-child(even) {
+.states-container:nth-child(odd) {
   background: rgb(222, 49, 99);
+  padding: 1rem 5px;
 }
 
-.states-container:nth-child(odd) {
+.states-container:nth-child(even) {
   background: #d70040;
+  padding: 1rem 5px;
 }

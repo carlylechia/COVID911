@@ -1,11 +1,15 @@
 #countries-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1.5fr));
-  padding-bottom: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.country-card {
+  transition: all 200ms ease;
 }
 
 .country-card:hover {
-  z-index: 1;
+  z-index: 10;
+  transform: scale(1.05);
 }
 
 #countries-container > .country-card:nth-child(even) {
@@ -24,5 +28,5 @@
 }
 
 .loading {
-  margin: 1rem 47%;
+  margin: 1rem 50%;
 }

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  display: block;
+  margin: auto;
+}
+
+.none {
+  display: none;
+}
+
+#headline {
+  padding: 5rem;
+  background: #d70040;
+  display: block;
+}
+
+/* img {
+  width: 70vw;
+  height: 20vh;
+} */
+
+.structure {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.maps {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topic {
+  color: #fff;
+  text-align: start;
+  width: 50%;
+}
