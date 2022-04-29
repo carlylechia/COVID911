@@ -1,4 +1,10 @@
 const images = require.context('../Images', false, /\.(png|jpe?g|svg)$/);
+// import registerRequireContextHook from 'babel-plugin-require-context-hook/register';
+
+// registerRequireContextHook();
+
+// // eslint-disable-next-line no-underscore-dangle
+// const images = global.__requireContext(__dirname, '../Images', false, /\.(png|jpe?g|svg)$/);
 const countriesAPI = 'https://api.covid19tracking.narrativa.com/api/';
 
 const createDate = () => {

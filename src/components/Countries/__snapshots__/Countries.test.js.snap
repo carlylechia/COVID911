@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries component test Countries snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <a
+        class="country-card grow pointer flex flex-column justify-center items-center"
+        href="/url"
+        style="min-height: 25vh;"
+      >
+        <div
+          loading="lazy"
+          style="width: 10rem; height: 70%; background-size: auto 80%; opacity: 0.2;"
+        />
+        <p
+          class="pr3 white f4 b"
+          style="font-size: 1.3rem; color: aliceblue;"
+        >
+          country 1
+        </p>
+        <span
+          class="db pr3 white f5 b"
+          style="font-size: 1rem; color: azure;"
+        >
+          Total:
+           100
+        </span>
+        <p
+          class="db pr3 white f5 b"
+          style="font-size: 1rem; color: azure;"
+        >
+          New Cases:
+           50
+        </p>
+      </a>
+    </div>
+    <div>
+      <h2
+        class="white f6 tracked fw3 pa2"
+        style="background: rgb(220, 59, 79); padding: 7px; color: silver; text-align: center;"
+      >
+        STATS BY COUNTRY
+      </h2>
+      <main
+        id="countries-container"
+      >
+        <p
+          class=""
+        >
+          No Matching Results
+        </p>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <h2
+      class="white f6 tracked fw3 pa2"
+      style="background: rgb(220, 59, 79); padding: 7px; color: silver; text-align: center;"
+    >
+      STATS BY COUNTRY
+    </h2>
+    <main
+      id="countries-container"
+    >
+      <p
+        class=""
+      >
+        No Matching Results
+      </p>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

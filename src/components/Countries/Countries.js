@@ -11,7 +11,7 @@ const Countries = () => {
   const wait = useSelector((state) => state.countriesReducer.wait, shallowEqual);
 
   return (
-    wait ? <img className="db center" width="100" height="100" alt="loading" src={loading} />
+    wait ? <img className="db center" width="100" height="100" style={{ margin: '2rem 47%' }} alt="loading" src={loading} />
       : (
         <>
           <h2
