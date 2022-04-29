@@ -6,7 +6,7 @@ const Country = ({
 }) => (
   <NavLink
     to={`${pageUrl}`}
-    className="country-card"
+    className="country-card grow pointer flex flex-column justify-center items-center"
     style={{ minHeight: '25vh' }}
   >
     <div
@@ -19,15 +19,15 @@ const Country = ({
       }}
       loading="lazy"
     />
-    <p className="country-names">{name}</p>
-    <span className="">
+    <p className="pr3 white f4 b" style={{ fontSize: '1.3rem', color: 'aliceblue' }}>{name}</p>
+    <span className="db pr3 white f5 b" style={{ fontSize: '1rem', color: 'azure' }}>
       Total:
       {` ${total}`}
     </span>
-    <span className="">
+    <p className="db pr3 white f5 b" style={{ fontSize: '1rem', color: 'azure' }}>
       New Cases:
       {` ${newCases}`}
-    </span>
+    </p>
   </NavLink>
 );
 Country.propTypes = {

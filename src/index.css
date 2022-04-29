@@ -16,3 +16,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
+#loading {
+  margin: 2rem auto;
+}

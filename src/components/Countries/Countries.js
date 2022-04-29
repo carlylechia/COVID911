@@ -14,7 +14,14 @@ const Countries = () => {
     wait ? <img className="db center" width="100" height="100" alt="loading" src={loading} />
       : (
         <>
-          <h2 style={{ background: 'rgb(220, 59, 79)', padding: '7px' }}>STATS BY COUNTRY</h2>
+          <h2
+            className="white f6 tracked fw3 pa2"
+            style={{
+              background: 'rgb(220, 59, 79)', padding: '7px', color: 'silver', textAlign: 'center',
+            }}
+          >
+            STATS BY COUNTRY
+          </h2>
           <main id="countries-container">
             {countryList.map((country) => (
               <Country

@@ -10,7 +10,7 @@ const Search = () => {
     <input
       className={`${notDisplay.length ? 'none' : 'block'}`}
       style={{
-        borderWidth: '2px', borderRadius: '1rem', padding: '5px', fontSize: '1rem', textAlign: 'center',
+        borderWidth: '2px', borderRadius: '1rem', padding: '5px', fontSize: '1rem', textAlign: 'center', margin: '2rem auto',
       }}
       type="text"
       value={input}
