@@ -41,10 +41,11 @@
   }
 
   .topic {
-    color: #fff;
+    color: aliceblue;
     text-align: center;
+    min-width: 80%;
     max-width: 100%;
-    word-break: break-all;
+    word-break: normal;
     padding: 1.5rem 0;
     margin: 0.5rem auto;
   }
