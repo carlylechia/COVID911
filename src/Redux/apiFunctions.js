@@ -1,4 +1,3 @@
-// const images = require.context('../Images', false, /\.(png|jpe?g|svg)$/);
 const countriesAPI = 'https://api.covid19tracking.narrativa.com/api/';
 
 const createDate = () => {
@@ -10,17 +9,6 @@ const createDate = () => {
 
   return currentDate;
 };
-// export const getImage = (name) => {
-//   let countryName = name.replace(/[_]/g, '-').replace('*', '').replace(',', '');
-//   if (countryName === 'diamond-princess' || countryName === 'ms-zaandam') countryName = 'ship';
-//   if (countryName === 'south-sudan') countryName = 'sudan';
-//   if (countryName.includes('congo')) countryName = 'congo';
-//   if (countryName === 'west-bank-and-gaza') countryName = 'palestine';
-//   if (countryName.includes('timor')) countryName = 'timor';
-//   if (countryName === 'us') countryName = 'usa';
-//   return images.keys().includes(`./${countryName}.png`) ? images(`./${countryName}.png`)
-//     : `https://mapsvg.com/static/maps/geo-calibrated/${countryName}.svg`;
-// };
 
 export const getCountries = async () => {
   const date = createDate();
