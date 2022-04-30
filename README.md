@@ -8,7 +8,7 @@
 ![gif](src/covid911_AdobeCreativeCloudExpress.gif)
 ![laptop](src/laptop.png)
 ![tablet](src/ipad.png)
-![mobile](src/localhost_3000_.png)
+![mobile](src/phone.png)
 
 ## Built With
 

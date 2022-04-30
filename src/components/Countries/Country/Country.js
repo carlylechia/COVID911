@@ -12,19 +12,19 @@ const Country = ({
     <div
       style={{
         width: '10rem',
-        height: '70%',
+        height: '60%',
         background: ` url(${image}) no-repeat 50% 50%`,
         backgroundSize: 'auto 80%',
         opacity: '0.2',
       }}
       loading="lazy"
     />
-    <p className="pr3 white f4 b" style={{ fontSize: '1.3rem', color: 'aliceblue' }}>{name}</p>
-    <span className="db pr3 white f5 b" style={{ fontSize: '1rem', color: 'azure' }}>
+    <p className="pr3 white f4 b" style={{ fontSize: '1.3rem', color: 'aliceblue', textAlign: 'center' }}>{name}</p>
+    <p className="db pr3 white f5 b" style={{ fontSize: '1rem', color: 'azure', textAlign: 'center' }}>
       Total:
       {` ${total}`}
-    </span>
-    <p className="db pr3 white f5 b" style={{ fontSize: '1rem', color: 'azure' }}>
+    </p>
+    <p className="db pr3 white f5 b" style={{ fontSize: '1rem', color: 'azure', textAlign: 'center' }}>
       New Cases:
       {` ${newCases}`}
     </p>

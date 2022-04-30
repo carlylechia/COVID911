@@ -34,7 +34,14 @@ const Countries = () => {
               />
             ))}
             {!wait && !countryList.length
-              && <p className="">No Matching Results</p>}
+              && (
+              <p style={{
+                fontSize: '1.5rem', color: 'silver', margin: '2rem auto', textAlign: 'center',
+              }}
+              >
+                No Matching Results
+              </p>
+              )}
           </main>
         </>
       )
