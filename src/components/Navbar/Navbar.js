@@ -16,13 +16,6 @@ const Navbar = () => {
         <p>most views</p>
         <IoMdSettings className="setting" />
       </header>
-      {/* <div id="headline">
-        <h1 className="topic">
-          <span style={{ whiteSpace: 'pre-line' }}>
-            {'Covid Statistics<br/> around the world.'.split('<br/>').join('\n')}
-          </span>
-        </h1>
-      </div> */}
     </>
   );
 };

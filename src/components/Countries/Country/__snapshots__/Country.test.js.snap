@@ -11,25 +11,44 @@ Object {
         style="min-height: 25vh;"
       >
         <div
+          style="color: rgb(255, 255, 255); position: absolute; right: 0px;"
+          to="url"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm244.5 0l-81.9-81.1c-7.5-7.5-7.5-19.8 0-27.3s19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81z"
+            />
+          </svg>
+        </div>
+        <div
+          class="cover"
           loading="lazy"
-          style="width: 10rem; height: 70%; background-size: auto 80%; opacity: 0.2;"
+          style="width: 10rem; height: 50%; opacity: 0.2;"
         />
         <p
           class="pr3 white f4 b"
-          style="font-size: 1.3rem; color: aliceblue;"
+          style="font-size: 1.3rem; color: aliceblue; text-align: center;"
         >
           country 1
         </p>
-        <span
+        <p
           class="db pr3 white f5 b"
-          style="font-size: 1rem; color: azure;"
+          style="font-size: 1rem; color: azure; text-align: center;"
         >
           Total:
            100
-        </span>
+        </p>
         <p
           class="db pr3 white f5 b"
-          style="font-size: 1rem; color: azure;"
+          style="font-size: 1rem; color: azure; text-align: center;"
         >
           New Cases:
            50
@@ -44,25 +63,44 @@ Object {
       style="min-height: 25vh;"
     >
       <div
+        style="color: rgb(255, 255, 255); position: absolute; right: 0px;"
+        to="url"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm244.5 0l-81.9-81.1c-7.5-7.5-7.5-19.8 0-27.3s19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81z"
+          />
+        </svg>
+      </div>
+      <div
+        class="cover"
         loading="lazy"
-        style="width: 10rem; height: 70%; background-size: auto 80%; opacity: 0.2;"
+        style="width: 10rem; height: 50%; opacity: 0.2;"
       />
       <p
         class="pr3 white f4 b"
-        style="font-size: 1.3rem; color: aliceblue;"
+        style="font-size: 1.3rem; color: aliceblue; text-align: center;"
       >
         country 1
       </p>
-      <span
+      <p
         class="db pr3 white f5 b"
-        style="font-size: 1rem; color: azure;"
+        style="font-size: 1rem; color: azure; text-align: center;"
       >
         Total:
          100
-      </span>
+      </p>
       <p
         class="db pr3 white f5 b"
-        style="font-size: 1rem; color: azure;"
+        style="font-size: 1rem; color: azure; text-align: center;"
       >
         New Cases:
          50

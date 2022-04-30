@@ -32,7 +32,7 @@ Object {
         class="db center"
         height="100"
         id="loading"
-        src="loading.gif"
+        src="/images/loading.gif"
         style="margin: 2rem 45%;"
         width="100"
       />
@@ -50,7 +50,7 @@ Object {
       class="db center"
       height="100"
       id="loading"
-      src="loading.gif"
+      src="/images/loading.gif"
       style="margin: 2rem 45%;"
       width="100"
     />

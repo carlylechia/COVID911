@@ -15,12 +15,12 @@ Object {
           <img
             alt=""
             class="block o-30 w-auto-ns w-50 h-100-ns h-50 maps"
-            src="world-map.png"
+            src="/images/world-map.png"
           />
           <img
             alt=""
             class="none o-30 w-auto-ns w-50 h-100-ns h-50 maps"
-            src="#"
+            src="/images/.png"
           />
           <h1
             class="topic white f2-l f4-m f4-ns f5"
@@ -54,12 +54,12 @@ Object {
         <img
           alt=""
           class="block o-30 w-auto-ns w-50 h-100-ns h-50 maps"
-          src="world-map.png"
+          src="/images/world-map.png"
         />
         <img
           alt=""
           class="none o-30 w-auto-ns w-50 h-100-ns h-50 maps"
-          src="#"
+          src="/images/.png"
         />
         <h1
           class="topic white f2-l f4-m f4-ns f5"

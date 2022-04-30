@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom';
 import { useSelector, shallowEqual } from 'react-redux';
 import Search from '../Search/Search';
-import { getImage } from '../../Redux/apiFunctions';
 import './Headline.css';
+import CountryImage from '../Countries/Country/CountryImage';
 
 const Headline = () => {
   const { pathname } = useLocation();
@@ -12,15 +12,15 @@ const Headline = () => {
   return (
     <div id="headline" className="flex ma0 justify-center items-center relative">
       <div className="structure">
-        <img
+        <CountryImage
           className={`${!mapCondition.length ? 'block' : 'none'} o-30 w-auto-ns w-50 h-100-ns h-50 maps`}
           alt=""
-          src={getImage('world-map')}
+          src="world-map"
         />
-        <img
+        <CountryImage
           className={`${mapCondition.length ? 'block' : 'none'} o-30 w-auto-ns w-50 h-100-ns h-50 maps`}
           alt=""
-          src={mapCondition.length ? getImage(mapCondition) : '#'}
+          src={mapCondition}
         />
 
         <h1 className="topic white f2-l f4-m f4-ns f5">

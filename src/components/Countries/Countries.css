@@ -30,3 +30,10 @@
 .loading {
   margin: 1rem 50%;
 }
+
+@media (max-width: 600px) {
+  #countries-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1rem, 1fr));
+  }
+}
