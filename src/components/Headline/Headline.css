@@ -33,6 +33,7 @@
 .maps {
   width: 60%;
   height: 30vh;
+  object-fit: contain;
 }
 
 @media (max-width: 600px) {

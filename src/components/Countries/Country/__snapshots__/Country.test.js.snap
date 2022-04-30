@@ -31,7 +31,7 @@ Object {
         <div
           class="cover"
           loading="lazy"
-          style="width: 10rem; height: 50%; opacity: 0.2;"
+          style="width: 10rem; height: 50%; background-image: url(undefined); opacity: 0.2;"
         />
         <p
           class="pr3 white f4 b"
@@ -83,7 +83,7 @@ Object {
       <div
         class="cover"
         loading="lazy"
-        style="width: 10rem; height: 50%; opacity: 0.2;"
+        style="width: 10rem; height: 50%; background-image: url(undefined); opacity: 0.2;"
       />
       <p
         class="pr3 white f4 b"

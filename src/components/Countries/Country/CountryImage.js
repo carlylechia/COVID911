@@ -14,23 +14,26 @@ export const getCountrySlug = (name) => {
 };
 
 export const useCountryImage = (src) => {
-  const [map] = useState(getCountrySlug(src));
-  const [url, setUrl] = useState(`/images/${map}.png`);
+  const [url, setUrl] = useState();
 
   useEffect(() => {
+    if (!url) return;
     const img = new Image();
     img.onerror = () => {
-      setUrl(`https://mapsvg.com/static/maps/geo-calibrated/${map}.svg`);
+      setUrl(`https://mapsvg.com/static/maps/geo-calibrated/${getCountrySlug(src)}.svg`);
     };
     img.src = url;
   }, [url]);
+
+  useEffect(() => {
+    setUrl(src ? `/images/${getCountrySlug(src)}.png` : '');
+  }, [src]);
 
   return url;
 };
 
 const CountryImage = ({ src, alt, className }) => {
   const url = useCountryImage(src);
-
   return <img src={url} alt={alt} className={className} />;
 };
 

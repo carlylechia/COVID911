@@ -20,7 +20,7 @@ Object {
           <img
             alt=""
             class="none o-30 w-auto-ns w-50 h-100-ns h-50 maps"
-            src="/images/.png"
+            src=""
           />
           <h1
             class="topic white f2-l f4-m f4-ns f5"
@@ -59,7 +59,7 @@ Object {
         <img
           alt=""
           class="none o-30 w-auto-ns w-50 h-100-ns h-50 maps"
-          src="/images/.png"
+          src=""
         />
         <h1
           class="topic white f2-l f4-m f4-ns f5"
