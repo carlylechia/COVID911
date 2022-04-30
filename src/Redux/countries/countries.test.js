@@ -1,6 +1,9 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
+import registerRequireContextHook from 'babel-plugin-require-context-hook/register';
 import countriesReducer, { filterCountries, fetchCountries } from './countries';
+
+registerRequireContextHook();
 
 describe('countries redux test', () => {
   const middlewares = [thunk];
