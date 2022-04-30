@@ -2,7 +2,7 @@
 
 #  COVID911
 
-> This web application fetches an API and displays live statistics about covid19 new cases in almost all countries on the planet. This Api is updated several times every day. The app makes search easy with the search bar which displays data for any country which matches the search result. It is highly responsive and looks good on any screen.
+> This web application fetches an API and displays live statistics about covid19 new cases in almost all countries on the planet. This Api is updated several times every day, and so is the app. The app makes search easy with the search bar which displays data for any country which matches the search result. It is highly responsive and looks good on any screen.
 
 ## App Visuals
 ![gif](src/covid911_AdobeCreativeCloudExpress.gif)
@@ -19,9 +19,13 @@
 
 ## Live Demo
 
+[Click here](https://covid-cop.netlify.app/) to visit the site.
+
+## Video Presentation
+
+Click [this link](https://www.loom.com/share/cf02cd71964f473baa5ea83058ba3757) to watch a video of the author talking about this project on loom.
 
 ## Getting Started
-
 
 To get a local copy up and running follow these simple example steps.
 for SSH:
@@ -69,6 +73,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse: [microverse community](https://github.com/microverseinc)
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 
