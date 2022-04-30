@@ -2,7 +2,13 @@
 
 #  COVID911
 
-> This web application fetches an API and displays live statistics about covid19 new cases. This Api is updated several times every day. The app makes search easy with the search bar which displays data for any country which matches the search result.
+> This web application fetches an API and displays live statistics about covid19 new cases in almost all countries on the planet. This Api is updated several times every day. The app makes search easy with the search bar which displays data for any country which matches the search result. It is highly responsive and looks good on any screen.
+
+## App Visuals
+![gif](src/covid911_AdobeCreativeCloudExpress.gif)
+![laptop](src/laptop.png)
+![tablet](src/ipad.png)
+![mobile](src/phone.png)
 
 ## Built With
 

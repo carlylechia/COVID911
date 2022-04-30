@@ -1,0 +1,22 @@
+.states-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.states-container:nth-child(even) {
+  background: rgb(222, 49, 99);
+  padding: 1rem 2rem;
+  color: aliceblue;
+  font-size: larger;
+}
+
+.states-container:nth-child(odd) {
+  background: #d70040;
+  padding: 1rem 2rem;
+  color: azure;
+  font-size: larger;
+}
+
+#loading {
+  margin: 2rem auto;
+}

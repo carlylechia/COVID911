@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  display: block;
+  margin: auto;
+}
+
+.none {
+  display: none;
+}
+
+#headline {
+  background: #d70040;
+  display: block;
+}
+
+.structure {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.topic {
+  color: #fff;
+  text-align: start;
+  width: 40%;
+  word-break: break-all;
+  padding: 5rem 1rem;
+}
+
+.maps {
+  width: 60%;
+  height: 30vh;
+}
+
+@media (max-width: 600px) {
+  .structure {
+    display: block;
+  }
+
+  .topic {
+    color: aliceblue;
+    text-align: center;
+    min-width: 80%;
+    max-width: 100%;
+    word-break: normal;
+    padding: 1.5rem 0;
+    margin: 0.5rem auto;
+  }
+
+  .maps {
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+  }
+}
