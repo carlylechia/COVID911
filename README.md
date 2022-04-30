@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  COVID911
 
-## Available Scripts
+> This web application fetches an API and displays live statistics about covid19 new cases in almost all countries on the planet. This Api is updated several times every day, and so is the app. The app makes search easy with the search bar which displays data for any country which matches the search result. It is highly responsive and looks good on any screen.
 
-In the project directory, you can run:
+## App Visuals
+![gif](src/covid911_AdobeCreativeCloudExpress.gif)
+![laptop](src/laptop.png)
+![tablet](src/ipad.png)
+![mobile](src/phone.png)
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- JSX, React, Redux
+- HTML, CSS, JavaScript
+- npm, webpack, linters
+- Jest
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo
 
-### `npm test`
+[Click here](https://covid-cop.netlify.app/) to visit the site.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Video Presentation
 
-### `npm run build`
+Click [this link](https://www.loom.com/share/cf02cd71964f473baa5ea83058ba3757) to watch a video of the author talking about this project on loom.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running follow these simple example steps.
+for SSH:
+`git clone git@github.com:carlylechia/COVID911.git`
+for https:
+`git clone https://github.com/carlylechia/COVID911.git`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install
 
-### `npm run eject`
+ after cloning the repo run 
+ `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Usage
+   run 
+ `npm start` for devlopment
+ `npm run build` for production code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run tests
+  **Linters**
+   - `npx stylelint "**/*.{css,scss}"` for CSS check.
+   - `npx stylelint "**/*.{css,scss}" --fix` to auto fix CSS issues if found.
+   - `npx eslint .` for JS check.
+   - `npx eslint . --fix` to fix JS issues if found.
+  **Jest**
+    - `npm run test`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Authors
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+👤 **Chia Carlyle**
 
-## Learn More
+- GitHub: [@CarlyleChia](https://github.com/CarlyleChia)
+- Twitter: [@ChiaCarlyle](https://twitter.com/ChiaCarlyle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chia-carlyle/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues, and feature requests are welcome!
 
-### Code Splitting
+Feel free to check the [issues page](https://github.com/carlylechia/BOOKSTORE/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Show your support
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
+- Microverse: [microverse community](https://github.com/microverseinc)
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
